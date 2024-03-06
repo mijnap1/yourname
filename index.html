@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Your Name - Main Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The 2000's best japanese animated movie by Shinkai Makoto">
+    <meta name="author" content="Jamie Ryu">
+    <link id="favicon" rel="icon" type="image/png" href="images/yourname-logo.jpg">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/cbf2b0968a.js" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Six+Caps&amp;display=swap" rel="stylesheet">
+    <style>
+        .music-button {
+            position: absolute;
+            top: 52px;
+            right: 265px;
+            cursor: pointer;
+            color: #ffffff;
+            font-size: 18px;
+            z-index: 1000;
+        }
+        .music-button:hover {
+            color: #858585; /* Change color on hover */
+        }
+    </style>
+</head>
+
+
+<body class="hidden hidden-ball smooth-scroll rounded-borders" data-primary-color="#8c6144">
+    <audio id="background-audio" loop>
+        <source src="music/Sparkle.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <i class="fa-solid fa-music music-button" onclick="toggleAudio()"></i>
+    <main>
+        <!-- Preloader -->
+        <div class="preloader-wrap" data-centerLine="Loading">
+            <div class="outer">
+                <div class="inner">
+                    <div class="trackbar">
+                        <div class="preloader-intro">
+                            <span>Loading...</span>
+                        </div>
+                        <div class="loadbar"></div>
+                        <div class="percentage-wrapper">
+                            <div class="percentage" id="precent"></div>
+                        </div>
+                    </div>
+
+                    <div class="percentage-intro">Please wait, website is loading</div>
+                </div>
+            </div>
+        </div>
+        <!--/Preloader -->
+
+        <div class="cd-index cd-main-content">
+
+            <!-- Page Content -->
+            <div id="yourname-page-content" class="light-content" data-bgcolor="#0c0c0c">
+
+                <!-- Header -->
+                <header class="fullscreen-menu invert-header" data-menucolor="#0c0c0c">
+                    <div id="header-container">
+
+
+                        <!-- Logo -->
+                        <div id="logo" class="hide-ball">
+                            <a class="ajax-link" data-type="page-transition" href="index.html">
+                        <img class="black-logo" src="images/your-name-white.png" alt="YourName Logo">
+                        <img class="white-logo" src="images/your-name-white.png" alt="YourName Logo">
+                    </a>
+                        </div>
+                        <!--/Logo -->
+
+
+                        <!-- Navigation -->
+                        <nav>
+                            <div class="nav-height">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <ul data-breakpoint="10025" class="flexnav">
+                                            <li class="link menu-timeline">
+                                                <a class="" href="#">
+                                                    <div class="before-span"><span data-hover="Main">Main</span></div>
+                                                </a>
+                                            </li>
+                                            <li class="link menu-timeline">
+                                                <a class="ajax-link active" data-type="page-transition" href="story.html">
+                                                    <div class="before-span"><span data-hover="Story">Story</span></div>
+                                                </a>
+                                            </li>
+                                            <li class="link menu-timeline">
+                                                <a class="ajax-link" data-type="page-transition" href="contact.html">
+                                                    <div class="before-span"><span data-hover="Pictures">Pictures</span></div>
+                                                </a>
+                                            </li>
+                                            <li class="link menu-timeline">
+                                                <a class="" href="#">
+                                                    <div class="before-span"><span data-hover="Footage">Footage</span></div>
+                                                </a>
+                                                <ul>
+                                                    <li><a class="ajax-link" href="contact.html" data-type="page-transition">Contact</a></li>
+                                                    <li><a class="ajax-link" href="credits.html" data-type="page-transition">Credits</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                        <!--/Navigation -->
+
+
+                        <!-- Menu Burger -->
+                        <div class="button-wrap right menu burger-lines">
+                            <div class="icon-wrap parallax-wrap">
+                                <div class="button-icon parallax-element">
+                                    <div id="burger-wrapper">
+                                        <div id="menu-burger">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button-text sticky right"><span data-hover="Menu | メニュー">Menu | メニュー</span></div>
+                        </div>
+                        <!--/Menu Burger -->
+
+                    </div>
+                </header>
+                <!--/Header -->
+
+
+
+                <!-- Content Scroll -->
+                <div id="content-scroll">
+
+
+                    <!-- Main -->
+                    <div id="main">
+
+                        <!-- Hero Section -->
+                        <div id="hero1">
+                            <div id="hero-styles">
+                                <div id="hero-caption" class="content-full-width parallax-scroll-caption text-align-center height-title">
+                                    <div class="inner">
+                                        <h1 class="hero-title caption-timeline primary-font-title"><span>Your Name.</span></h1>
+                                        <br>
+                                            <h3>あなたの名前は何ですか？</h3>
+                                    </div>
+                                </div>
+                                <div id="hero-footer">
+                                    <div class="hero-footer-left">
+                                        <div class="button-wrap right scroll-down">
+                                            <div class="icon-wrap parallax-wrap">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/Hero Section -->
+
+
+                        <!-- Main Content -->
+                        <div id="main-content">
+                            <!-- Main Page Content -->
+                            <div id="main-page-content" class="content-max-width">
+
+
+                                <!-- Row -->
+                                <div class="content-row dark-section" data-bgcolor="#0c0c0c">
+                                    <div class="clipped-image-wrapper">
+                                        <div class="clipped-image-pin">
+                                            <div class="clipped-image">
+                                                <img src="images/yourname.gif" alt="YourName GIF" class="background-gif">
+                                                <div class="clipped-image-gradient"></div>
+                                            </div>
+                                        </div>
+                                        <div class="clipped-image-content text-align-center content-full-width">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+                                <!--/Row -->
+
+
+                                <!-- Row -->
+                                <div class="content-row text-align-center dark-section" data-bgcolor="#0c0c0c">
+
+
+                                    <div class="move-thumbs-wrapper">
+
+                                        <div class="start-thumbs-caption">
+                                            <h3>主人公たち</h3>
+                                            <h2 class="primary-font-title big-title has-mask-fill">PROTAGONISTS</h2>
+                                            <p>MITSUHA & TAKI</p>
+                                        </div>
+
+
+
+                                        <div class="start-thumbs-wrapper">
+
+                                            <div class="start-move-thumb" data-start="top 120%" data-stop="600%">
+                                                <div class="move-thumb-inner">
+                                                    <div class="section-image">
+                                                        <img src="images/your-name-girl.webp" class="item-image" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="start-move-thumb" data-start="top 90%" data-stop="1100%">
+                                                <div class="move-thumb-inner">
+                                                    <div class="section-image">
+                                                        <img src="images/mitsuha3.jpg" class="item-image" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="start-move-thumb" data-start="top 90%" data-stop="400%">
+                                                <div class="move-thumb-inner">
+                                                    <div class="section-image">
+                                                        <img src="images/mitsuha1.jpg" class="item-image" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="start-move-thumb" data-start="top 120%" data-stop="600%">
+                                                <div class="move-thumb-inner">
+                                                    <div class="section-image">
+                                                        <img src="images/taki1.webp" class="item-image" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="start-move-thumb" data-start="top 100%" data-stop="750%">
+                                                <div class="move-thumb-inner">
+                                                    <div class="section-image">
+                                                        <img src="images/taki2.jpg" class="item-image" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="start-move-thumb" data-start="top 40%" data-stop="300%">
+                                                <div class="move-thumb-inner">
+                                                    <div class="section-image">
+                                                        <img src="images/taki3.jpg" class="item-image" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+                                        <div class="end-thumbs-wrapper">
+                                            <div class="end-move-thumb"></div>
+                                            <div class="end-move-thumb"></div>
+                                            <div class="end-move-thumb"></div>
+                                            <div class="end-move-thumb"></div>
+                                            <div class="end-move-thumb"></div>
+                                            <div class="end-move-thumb"></div>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                                <!--/Row -->
+
+
+
+                                <!-- Row -->
+                                <div class="content-row full row_padding_left row_padding_right row_padding_bottom text-align-center dark-section" data-bgcolor="#0c0c0c">
+
+                                    <hr>
+                                    <hr>
+                                    <hr class="destroy">    
+                                    <h3>ディレクター</h3>
+                                    <h2 class="big-title primary-font-title no-margins has-mask-fill">THE DIRECTOR</h2>
+
+                                </div>
+                                <!--/Row -->
+
+
+
+
+
+                                <!-- Row -->
+                                <div class="content-row row_padding_top row_padding_bottom light-section change-header-color has-clip-path" data-bgcolor="#fff">
+
+                                    <hr class="destroy">
+
+
+                                    <div class="pinned-section">
+                                        <div class="pinned-element left">
+                                        <h5>09.02.1973</h5>
+                                            <h2 class="big-title primary-font-title no-margins">
+                                                <span class="has-mask-fill">Makoto</span><br>
+                                                <span class="has-mask-fill">Shinkai</span>
+                                            </h2>
+                                            <img src="images/shinkai-makoto.jpg" alt="Shinkai Makoto Image" class="shinkai-image">
+                                        </div>
+                                    
+                                        <div class="scrolling-element right">
+                                            <h6>Makoto Niitsu, known as Makoto Shinkai (新海 誠, Shinkai Makoto), is a Japanese filmmaker and novelist. He is known for his anime feature films produced with studio CoMix Wave Films.
+                                                <br>
+                                                <br>
+                                                <dl class="accordion has-animation">
+                                                <dt>
+                                                    <span class="link">
+                                                        <div>Early life</div>
+                                                    </span>
+                                                    <div class="acc-icon-wrap parallax-wrap">
+                                                        <div class="acc-button-icon parallax-element">
+                                                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                                                        </div>
+                                                    </div>
+                                                </dt>
+                                                <dd class="accordion-content">Shinkai began his career as a video game animator with Nihon Falcom in 1996, and gained recognition as a filmmaker with the release of the original video animation (OVA) She and Her Cat (1999). Shinkai then released the science-fiction OVA Voices of a Distant Star in 2002 as his first feature with CoMix Wave.</dd>
+                                                <dt>
+                                                    <span class="link">
+                                                        <div>Studies</div>
+                                                    </span>
+                                                    <div class="acc-icon-wrap parallax-wrap">
+                                                        <div class="acc-button-icon parallax-element">
+                                                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                                                        </div>
+                                                    </div>
+                                                </dt>
+                                                <dd class="accordion-content">A native of Nagano Prefecture, Shinkai studied Japanese literature at Chuo University, where he was a member of the juvenile literature club and drew picture books. He traces his passion for creation to the manga, anime and novels he was exposed to in middle school. His favorite anime films are Laputa: Castle in the Sky, Nausicaä and The Castle of Cagliostro by Hayao Miyazaki, The End of Evangelion by Hideaki Anno and Patlabor 2 by Mamoru Oshii.</dd>
+                                                <dt>
+                                                    <span class="link">
+                                                        <div>Career</div>
+                                                    </span>
+                                                    <div class="acc-icon-wrap parallax-wrap">
+                                                        <div class="acc-button-icon parallax-element">
+                                                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                                                        </div>
+                                                    </div>
+                                                </dt>
+                                                <dd class="accordion-content">Shinkai's films have consistently received highly positive reviews from both critics and audiences, and he is considered to be one of Japan's most commercially successful filmmakers. His three most recent films Your Name (2016), Weathering with You (2019), and Suzume (2022) are all among the highest-grossing Japanese films of all time both in Japan and worldwide at the time of their release.</h6>
+                                                </dd>
+                                            </dl>
+                                            <h5>His Projects :</h5>
+                                            <img src="images/shinkai-projects.png" class="item-image" alt="">
+                                        </div>
+                                    </div>
+                                    
+                                    
+
+                                    <hr class="destroy">
+
+                                </div>
+                                <!--/Row -->
+
+
+                                <!-- Row -->
+                                <div class="content-row full row_padding_top row_padding_left row_padding_right text-align-center dark-section" data-bgcolor="#0c0c0c">
+                                    <h3>彼の製品</h3>
+                                    <h2 class="big-title primary-font-title"><span class="has-mask-fill">His Products</span></h2>
+                                    <hr>
+                                    <hr>
+
+
+
+                                </div>
+                                <!--/Row -->
+
+
+                                <!-- Row -->
+                                <div class="content-row full row_padding_bottom dark-section wide1" data-bgcolor="#0c0c0c">
+
+                                    <div class="moving-gallery bw-gallery">
+                                        <ul class="wrapper-gallery">
+                                            <li class="link">
+                                                <a target="_blank" href="http://kiminona.com/goods/"><img src="images/goods10.jpg" alt="goods"></a>
+                                                <div class="moving-gallery-caption"><h5 style="color:rgb(0, 0, 0)">Tote Bag | トートバッグ</h5></div>
+                                            </li>
+                                            <li class="link">
+                                                <a target="_blank" href="http://kiminona.com/goods/"><img src="images/goods11.jpg" alt="goods"></a>
+                                                <div class="moving-gallery-caption"><h5 style="color:rgb(0, 0, 0)">T-shirt | Tシャツ</h5></div>
+                                            </li>
+                                            <li class="link">
+                                                <a target="_blank" href="http://kiminona.com/goods/"><img src="images/goods12.jpg" alt="goods"></a>
+                                                <div class="moving-gallery-caption"><h5 style="color:rgb(0, 0, 0)">Planisphere | 君の名は。星座早見盤 </h5></div>
+                                            </li>
+                                            <li class="link">
+                                                <a target="_blank" href="http://kiminona.com/goods/"><img src="images/goods3.jpg" alt="goods"></a>
+                                                <div class="moving-gallery-caption"><h5 style="color:rgb(0, 0, 0)">Mug Cup | マグカップ</h5></div>
+                                            </li>
+                                            <li class="link">
+                                                <a target="_blank" href="http://kiminona.com/goods/"><img src="images/goods6.jpg" alt="goods"></a>
+                                                <div class="moving-gallery-caption"><h5 style="color:rgb(0, 0, 0)">Poster | ポスター</h5></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="moving-gallery fw-gallery">
+                                        <ul class="wrapper-gallery">
+                                            <li class="link">
+                                                <a target="_blank" href="http://kiminona.com/goods/"><img src="images/goods8.jpg" alt="goods"></a>
+                                                <div class="moving-gallery-caption"><h5 style="color:rgb(0, 0, 0)">Sticky Notes | 付箋</h5></div>
+                                            </li>
+                                            <li class="link">
+                                                <a target="_blank" href="http://kiminona.com/goods/"><img src="images/goods9.jpg" alt="goods"></a>
+                                                <div class="moving-gallery-caption"><h5 style="color:rgb(0, 0, 0)">Keychain set | アクリルキーホルダーセット</h5></div>
+                                            </li>
+                                            <li class="link">
+                                                <a target="_blank" href="http://kiminona.com/goods/"><img src="images/goods2.jpg" alt="goods"></a>
+                                                <div class="moving-gallery-caption"><h5 style="color:rgb(0, 0, 0)">Character fine graph | ラファイングラフ</h5></div>
+                                            </li>
+                                            <li class="link">
+                                                <a target="_blank" href="http://kiminona.com/goods/"><img src="images/goods4.jpg" alt="goods"></a>
+                                                <div class="moving-gallery-caption"><h5 style="color:rgb(0, 0, 0)">Clear file set | クリアファイルセット</h5></div>
+                                            </li>
+                                            <li class="link">
+                                                <a target="_blank" href="http://kiminona.com/goods/"><img src="images/goods5.jpg" alt="goods"></a>
+                                                <div class="moving-gallery-caption"><h5 style="color:rgb(0, 0, 0)">Clear pocket | クリアポケット</h5></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                <!--/Row -->
+
+
+                                <!-- Row -->
+
+                                <div class="content-row full row_padding_top row_padding_left row_padding_right text-align-center dark-section" data-bgcolor="#0c0c0c">
+                                    <h3>キャラクター</h3>
+                                    <h2 class="big-title primary-font-title"><span class="has-mask-fill">Characters</span></h2>
+                                    <hr>
+                                    <hr>
+                                    <hr>
+
+                                    <ul class="team-members-list" data-fx="1">
+                                        <li class="link has-hover-image" data-img="images/taki1.webp">
+                                            <div class="team-member has-animation"><span>立花瀧</span>
+                                                <div class="primary-font-title">Taki Tachibana</div><span>Main Character</span></div>
+                                        </li>
+                                        <li class="link has-hover-image" data-img="images/mitsuha2.jpg">
+                                            <div class="team-member has-animation"><span>宮水 三葉</span>
+                                                <div class="primary-font-title">Mitsuha Miyamizu</div><span>Main Character</span></div>
+                                        </li>
+                                        <li class="link has-hover-image" data-img="images/miki-cha.png">
+                                            <div class="team-member has-animation"><span>奥寺 ミキ</span>
+                                                <div class="primary-font-title">Miki Okudera</div><span>Web Designer</span></div>
+                                        </li>
+                                        <li class="link has-hover-image" data-img="images/hitoya-cha.png">
+                                            <div class="team-member has-animation"><span>宮水 一葉</span>
+                                                <div class="primary-font-title">Hitoha Miyamizu</div><span>Mitsuha's grandmother</span></div>
+                                        </li>
+                                        <li class="link has-hover-image" data-img="images/Katsuhiko-cha.png">
+                                            <div class="team-member has-animation"><span>勅使河原 克彦</span>
+                                                <div class="primary-font-title">Katsuhiko Teshigawara</div><span>Mitsuha's friend</span></div>
+                                        </li>
+                                        <li class="link has-hover-image" data-img="images/sayaka-cha.png">
+                                            <div class="team-member has-animation"><span>名取 早耶香</span>
+                                                <div class="primary-font-title">Sayaka Natori</div><span>Mitsuha's friend</span></div>
+                                        </li>
+                                        <li class="link has-hover-image" data-img="images/Tsukasa-cha.png">
+                                            <div class="team-member has-animation"><span>藤井 司</span>
+                                                <div class="primary-font-title">Tsukasa Fujii</div><span>Mitsuha's friend</span></div>
+                                        </li>
+                                        <li class="link has-hover-image" data-img="images/Shinta-cha.png">
+                                            <div class="team-member has-animation"><span>高木 真太</span>
+                                                <div class="primary-font-title">Shinta Takagi</div><span>Mitsuha's friend</span></div>
+                                        </li>
+                                        <li class="link has-hover-image" data-img="images/Yotsuha-cha.png">
+                                            <div class="team-member has-animation"><span>宮水 四葉</span>
+                                                <div class="primary-font-title">Yotsuha Miyamizu</div><span>Mitsuha's younger sister</span></div>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <!--/Row -->
+
+
+
+
+
+                            </div>
+                            <!--/Main Page Content -->
+
+                        </div>
+                        <!--/Main Content -->
+
+                    </div>
+                    <!--/Main -->
+
+                    <!-- Footer -->
+                    <div class="content-row full row_padding_top row_padding_left row_padding_right text-align-center dark-section" data-bgcolor="#0c0c0c">
+
+                    <footer class="hidden">
+                        <div id="footer-container">
+
+                            <div id="backtotop" class="button-wrap left">
+                                <div class="icon-wrap parallax-wrap">
+                                    <div class="button-icon parallax-element">
+                                        <ion-icon name="arrow-up-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="button-text sticky left"><span data-hover="Back Top">Back Top</span></div>
+                            </div>
+
+                            <div class="footer-middle">
+                                <div class="copyright">2024 © <a class="link" target="_blank" href="https://mijnap1.github.io">Jamie Ryu</a>. All rights reserved.</div>
+                            </div>
+
+                            <div class="socials-wrap">
+                                <div class="socials-text">Follow Us</div>
+                                <ul class="socials">
+                                    <li><span class="parallax-wrap"><a class="parallax-element" href="https://twitter.com/kiminona_movie" target="_blank">Tw</a></span></li>
+                                    <li><span class="parallax-wrap"><a class="parallax-element" href="https://www.facebook.com/yourname.ro" target="_blank">Fb</a></span></li>
+                                    <li><span class="parallax-wrap"><a class="parallax-element" href="https://www.instagram.com/kiminonawa.official/">In</a></span></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </footer>
+                    <!--/Footer -->
+
+
+                </div>
+                <!--/Content Scroll -->
+
+
+                <div id="app"></div>
+
+
+            </div>
+            <!--/Page Content -->
+
+        </div>
+    </main>
+
+
+
+
+    <div class="cd-cover-layer"></div>
+    <div id="magic-cursor">
+        <div id="ball">
+            <div id="ball-drag-x"></div>
+            <div id="ball-drag-y"></div>
+            <div id="ball-loader"></div>
+        </div>
+    </div>
+    <div id="clone-image">
+        <div class="hero-translate"></div>
+    </div>
+    <div id="rotate-device"></div>
+
+    <script>
+        var audio = document.getElementById("background-audio");
+
+        function toggleAudio() {
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+    </script>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/Flip.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/5.0.0/imagesloaded.pkgd.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.4.0/smooth-scrollbar.js'></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpK1sWi3J3EbUOkF_K4-UHzi285HyFX5M&sensor=false"></script>
+
+    <script src="js/plugins.js"></script>
+
+    <script src="js/common.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
